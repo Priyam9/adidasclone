@@ -1,0 +1,103 @@
+html {
+font-family: Arial, Helvetica, sans-serif;
+}
+body {
+margin: 0;
+box-sizing: border-box;
+background-color: black;
+}
+h1, h2 {
+color: white;
+text-align: center;
+}
+h1 {
+font-size: 35px;
+}
+h1:hover {
+color: rgb(243, 168, 7);
+}
+h2 {
+font-size: 25px;
+}
+h2:hover {
+color: rgb(243, 168, 7);
+}
+.content {
+padding: 20px;
+color: white;
+font-size: 20px;
+}
+.breadcrumb {
+overflow: hidden;
+background-color: black;
+}
+
+.breadcrumb-item a {
+color: rgb(243, 168, 7);
+text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+background-color: rgb(243, 168, 7);
+color: black;
+}
+footer {
+display: flex;
+flex-direction: column;
+background-color: black;
+align-items: center;
+color: white;
+padding: 20px 0;
+}
+.social-media {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+margin: 20px 0;
+}
+.social-media a {
+color: white;
+margin: 0 10px;
+transition: color 0.3s;
+}
+.social-media a:hover {
+color: rgb(243, 168, 7);
+}
+.footer-links {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+margin: 20px 0;
+}
+.footer-links a {
+margin: 0 15px;
+color: white;
+text-decoration: none;
+transition: color 0.3s;
+}
+.footer-links a:hover {
+color: rgb(243, 168, 7);
+}
+
+@media (max-width: 768px) {
+h1 {
+font-size: 30px;
+}
+h2 {
+font-size: 20px;
+}
+.content {
+font-size: 18px;
+}
+}
+@media (max-width: 576px) {
+h1 {
+font-size: 25px;
+}
+h2 {
+font-size: 18px;
+}
+.content {
+font-size: 16px;
+}
+}

@@ -1,0 +1,272 @@
+/* General Styles */
+body {
+background-color: #000000;
+margin: 0;
+text-align: center;
+}
+
+img {
+height: 100px;
+width: 250px;
+margin: 3px;
+}
+
+/* Marquee Styles */
+.marquee-container {
+width: 100%;
+overflow: hidden;
+white-space: nowrap;
+color:#fff;
+background-color:#000000;
+}
+
+.marquee-text {
+display: inline-block;
+animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+0% { transform: translateX(100%); }
+100% { transform: translateX(-100%); }
+}
+
+/* Top Navigation Styles */
+.topnav {
+overflow: hidden;
+background-color: black;
+}
+
+.topnav a {
+float: left;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+.topnav a:hover {
+border-radius: 15px;
+background-color: white;
+color: black;
+}
+
+.topnav input[type=text] {
+width: 400px;
+float: right;
+padding: 6px;
+border: none;
+margin-top: 8px;
+margin-right: 16px;
+font-size: 17px;
+border-radius: 10px;
+}
+.tooltip {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color:rgb(243, 168, 7);
+    color: #000000;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+    white-space: nowrap;
+}
+.topnav a:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Down Navigation Styles */
+.downnav {
+background-color: black;
+overflow: hidden;
+}
+
+.downnav a {
+float: left;
+color: white;
+display: block;
+text-align: center;
+text-decoration: none;
+font-size: 17px;
+padding: 14px 16px;
+}
+
+.downnav a:hover {
+border-radius: 15px;
+background-color: white;
+color: black;
+}
+
+/* Image Style */
+.row {
+display: flex;
+flex-wrap: wrap;
+}
+
+.column {
+flex: 25%;
+padding: 20px 10px 10px 0;
+}
+
+/* Jumbotron Styles */
+.jumbotron {
+color: white;
+border: 5px solid white;
+background-image: url("jumbotronn.png");
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+text-align: center;
+padding: 2rem;
+}
+
+/* Centering content in the jumbotron */
+.jumbotron .display-4,
+.jumbotron p,
+.jumbotron .btn {
+display: inline-block;
+vertical-align: middle;
+}
+
+.jumbotron {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 400px; /* Adjust height as needed */
+}
+
+/* Footer Styles */
+footer {
+display: flex;
+flex-direction: column;
+background-color: black;
+align-items: center;
+color: white;
+padding: 1rem 0;
+}
+
+.footer1 {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 15px;
+}
+
+.social-media {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.social-media a {
+color: rgb(243, 168, 7);
+margin: 20px;
+border-radius: 5px;
+}
+
+.footer2 {
+display: flex;
+width: 100%;
+justify-content: space-evenly;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.footer0 {
+font-weight: 1200;
+transition-duration: 1s;
+}
+
+.footer0:hover {
+color: rgb(243, 168, 7);
+}
+
+.footer2 .heading {
+font-weight: 900;
+font-size: 18px;
+}
+
+.footer3 {
+margin-top: 60px;
+margin-bottom: 20px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.footer2 .heading:hover {
+color: rgb(243, 168, 7);
+}
+
+.footer2 .div:hover {
+transform: scale(1.05);
+}
+
+.footer3 h4 {
+margin: 0 10px;
+}
+
+.footer2 div {
+margin: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+.topnav input[type=text] {
+width: 300px;
+}
+}
+
+@media (max-width: 992px) {
+.topnav input[type=text] {
+width: 250px;
+}
+
+.jumbotron {
+padding: 1rem;
+}
+}
+
+@media (max-width: 768px) {
+.topnav a, .downnav a {
+float: none;
+display: block;
+text-align: left;
+padding: 10px;
+}
+
+.topnav input[type=text] {
+width: 100%;
+margin: 8px 0;
+}
+
+.footer2 {
+flex-direction: column;
+align-items: flex-start;
+}
+}
+
+@media (max-width: 576px) {
+.column {
+flex: 100%;
+padding: 10px;
+}
+
+.topnav input[type=text] {
+width: calc(100% - 32px);
+margin: 8px 16px;
+}
+
+.footer1, .footer2 {
+align-items: center;
+text-align: center;
+}
+}
