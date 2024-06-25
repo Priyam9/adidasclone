@@ -58,28 +58,10 @@
         padding: 6px;
         border: none;
         margin-top: 8px;
-        margin-right: 16px;
+        margin-right: 200px;
         font-size: 17px;
         border-radius: 10px;
-        }
-        .tooltip {
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color:rgb(243, 168, 7);
-        color: #000000;
         text-align: center;
-        padding: 5px 10px;
-        border-radius: 4px;
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.3s;
-        white-space: nowrap;
-        }
-        .topnav a:hover .tooltip {
-        opacity: 1;
-        visibility: visible;
         }
 
         /* Down Navigation Styles */
@@ -121,7 +103,8 @@
         border: 5px solid white;
         background-image: url("cup022.jpg");
         background-size: cover;
-        background-repeat: no-repeat;
+        position: relative;
+        background-repeat: no-repeat center;
         background-attachment: fixed;
         text-align: center;
         padding: 2rem;
@@ -141,6 +124,19 @@
         justify-content: center;
         align-items: center;
         height: 600px; /* Adjust height as needed */
+        }
+        @media (max-width: 767px) {
+        .jumbotron-custom {
+        padding: 2rem 1rem;
+        }
+
+        .jumbotron-custom h1 {
+        font-size: 1.5rem;
+        }
+
+        .jumbotron-custom p {
+        font-size: 1rem;
+        }
         }
         /* card */
         @keyframes blink{
