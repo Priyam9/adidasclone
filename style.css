@@ -31,14 +31,13 @@
         }
 
         /* Top Navigation Styles */
-        .topnav {
+                .topnav {
         overflow: hidden;
         background-color: black;
         }
 
         .topnav a {
-        float: left;
-        display: block;
+        display: inline-block;
         color: white;
         text-align: center;
         padding: 14px 16px;
@@ -52,18 +51,6 @@
         color: black;
         }
 
-        .topnav input[type=text] {
-        width: 400px;
-        float: right;
-        padding: 6px;
-        border: none;
-        margin-top: 8px;
-        margin-right: 16px;
-        font-size: 17px;
-        border-radius: 10px;
-        text-align: center;
-        }
-
         /* Down Navigation Styles */
         .downnav {
         background-color: black;
@@ -71,9 +58,8 @@
         }
 
         .downnav a {
-        float: left;
         color: white;
-        display: block;
+        display: inline-block;
         text-align: center;
         text-decoration: none;
         font-size: 17px;
@@ -101,7 +87,7 @@
         .jumbotron {
         color: white;
         border: 5px solid white;
-        background-image: url("cup022.jpg");
+        background-image: url("cup-22.jpg");
         background-size: cover;
         position: relative;
         background-repeat: no-repeat center;
